@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListyProfileComponent } from './listy-profile.component';
+import { ListProfileComponent } from './list-profile.component';
 
-describe('ListyProfileComponent', () => {
-  let component: ListyProfileComponent;
-  let fixture: ComponentFixture<ListyProfileComponent>;
+describe('ListProfileComponent', () => {
+  let component: ListProfileComponent;
+  let fixture: ComponentFixture<ListProfileComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListyProfileComponent ]
+      declarations: [ ListProfileComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListyProfileComponent);
+    fixture = TestBed.createComponent(ListProfileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
