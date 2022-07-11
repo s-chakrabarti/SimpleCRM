@@ -11,4 +11,29 @@
   user was updated
   </ng-template>
 
+
+  <h2> Learning ngFor</h2>
+  <ul>
+    <li *ngFor="let contacts of contacts; index as i; first as f ;last as l">
+      <div *ngIf="f" style=background-color:lightseagreen>This is first Record</div>
+      <div>
+      {{ i }}  {{ contacts.firstname }} {{contacts.lastname}}
+      </div>
+      <div *ngIf="l" style = "background-color:red">this is the last record</div>
+    </li>
+  </ul>
+
+  <h4>Leanrning ngSwitch</h4>
+    <div [ngSwitch]="superhero">
+      <div *ngSwitchCase="'WonderWoman'"> Display powers</div>
+      <div *ngSwitchCase="'Spiderman'"> Web</div>
+      <div *ngSwitchCase="'Batman'"> Bat</div>
+      <div *ngSwitchDefault>Random Person </div>
+    </div>
+
+
+
+  <h3>Learning ngStyle</h3>
+  <div [ngStyle] ="{'background-color':'green','color':'#fff'}">This is green DIV </div>  //#fff is white colour
+<div [ngStyle] ="{'background-color': styleProp}">This is Style Prop </div>  
   <router-outlet></router-outlet>
